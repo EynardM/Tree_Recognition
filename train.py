@@ -3,6 +3,7 @@ from util.objects import *
 from util.locations import *
 from util.helpers import *
 from util.parameters import *
+import wandb
 
 def train_yolov8(yolo_size, augmented=False):
     # création du data.yaml

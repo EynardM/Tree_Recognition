@@ -3,8 +3,7 @@ from util.objects import *
 from util.locations import *
 from util.helpers import *
 from util.parameters import *
-import wandb
-os.environ["WANDB_MODE"] = "dryrun"
+
 def train_yolov8(yolo_size, augmented=False):
     # création du data.yaml
     if augmented:

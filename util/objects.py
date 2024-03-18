@@ -68,7 +68,10 @@ class Dataset:
         self.augmented_elements = []
 
     def __str__(self):
-        return f"Name: {self.name}"
+        stats_str = "\nStatistics:\n"
+        for key, value in self.dataset_stats.items():
+            stats_str += f"{key}: {value}\n"
+        return f"Name: {self.name}\n{stats_str}"
 
     def populate(self) -> None:
         for file in os.listdir(os.path.join(self.data_folder, 'images')):
@@ -96,17 +99,14 @@ class Dataset:
         self.dataset_stats['nb_trees'] = nb_trees_total
         self.dataset_stats['proportions'] = proportions_total
         
-    def init(self, plot=False) -> None:
-        self.get_stats()
-        if plot:
-            self.plot_proportions()
+    # def init(self, plot=False) -> None:
+    #     self.get_stats()
+    #     if plot:
+    #         self.plot_proportions()
 
     def plot_proportions(self):
-        print("no")
         labels = list(self.dataset_stats['proportions'].keys())
         proportions = list(self.dataset_stats['proportions'].values())
-        print(labels)
-        print(proportions)
         plt.figure(figsize=(10, 6))
         plt.bar(labels, proportions)
         plt.xlabel('Type d\'arbre')
@@ -161,11 +161,10 @@ class Dataset:
 
                 # Image basique rotated
                 filename = f"{element.id}_{angle}"
-                augmented_image_path = os.path.join(DATA_AUGMENTED_IMAGES_PATH, filename+".jpg")
+                augmented_image_path = os.path.join(TRAIN_DATASET_IMAGES_PATH, filename+".jpg")
                 cv2.imwrite(augmented_image_path, rotated_image)
-                get_annotated_image(annotations=rotated_annotations, image=rotated_image, annotated_folder=DATA_AUGMENTED_ANNOTED_PATH, filename=filename+".jpg")
 
-                augmented_label_path = os.path.join(DATA_AUGMENTED_LABELS_PATH, filename+".txt")
+                augmented_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+".txt")
                 with open(augmented_label_path, 'w') as f:
                     for annotation in rotated_annotations:
                         f.write(' '.join(map(str, annotation)) + '\n')
@@ -174,11 +173,10 @@ class Dataset:
                 self.augmented_elements.append(augmented_element)
 
                 # Image basique rotated filtered
-                filtered_image_path = os.path.join(DATA_AUGMENTED_IMAGES_PATH, filename+"_f"+".jpg")
+                filtered_image_path = os.path.join(TRAIN_DATASET_IMAGES_PATH, filename+"_f"+".jpg")
                 cv2.imwrite(filtered_image_path, filtered_rotated_image)
-                get_annotated_image(annotations=rotated_annotations, image=filtered_rotated_image, annotated_folder=DATA_AUGMENTED_ANNOTED_PATH, filename=filename+"_filtered"+".jpg")
 
-                filtered_label_path = os.path.join(DATA_AUGMENTED_LABELS_PATH, filename+"_f"+".txt")
+                filtered_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+"_f"+".txt")
                 with open(filtered_label_path, 'w') as f:
                     for annotation in rotated_annotations:
                         f.write(' '.join(map(str, annotation)) + '\n')
@@ -187,7 +185,7 @@ class Dataset:
                 self.augmented_elements.append(augmented_element)
 
             # Image basique filtered
-            filtered_label_path = os.path.join(DATA_AUGMENTED_LABELS_PATH, filename+"_f"+".txt")
+            filtered_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+"_f"+".txt")
             with open(filtered_label_path, 'w') as f:
                 for annotation in element.annotations:
                     f.write(' '.join(map(str, annotation)) + '\n')
@@ -195,8 +193,8 @@ class Dataset:
             # Image basique mirrored
             mirrored_image = cv2.flip(image, 1)
             mirrored_annotations = [[ann[0], 1 - ann[1], ann[2], ann[3], ann[4]] for ann in element.annotations]
-            mirrored_image_path = os.path.join(DATA_AUGMENTED_IMAGES_PATH, filename+"_m"+".jpg")
-            mirrored_label_path = os.path.join(DATA_AUGMENTED_LABELS_PATH, filename+"_m"+".txt")          
+            mirrored_image_path = os.path.join(TRAIN_DATASET_IMAGES_PATH, filename+"_m"+".jpg")
+            mirrored_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+"_m"+".txt")          
             cv2.imwrite(mirrored_image_path, mirrored_image)
 
             with open(mirrored_label_path, 'w') as f:
@@ -208,8 +206,8 @@ class Dataset:
             
             # Image basique mirrored filtered
             mirrored_filtered_image = cv2.flip(filtered_image, 1)  
-            mirrored_filtered_path = os.path.join(DATA_AUGMENTED_IMAGES_PATH, filename+"_f_m"+".jpg")
-            mirrored_filtered_label_path = os.path.join(DATA_AUGMENTED_LABELS_PATH, filename+"_f_m"+".txt")
+            mirrored_filtered_path = os.path.join(TRAIN_DATASET_IMAGES_PATH, filename+"_f_m"+".jpg")
+            mirrored_filtered_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+"_f_m"+".txt")
             cv2.imwrite(mirrored_filtered_path, mirrored_filtered_image)
             
             with open(mirrored_filtered_label_path, 'w') as f:

@@ -61,3 +61,39 @@ def get_datasets():
     test_dataset = create_dataset(TEST_DATASET_PATH)
     valid_dataset = create_dataset(VALID_DATASET_PATH)
     return train_dataset, test_dataset, valid_dataset
+
+
+def generate_dataset(new_dataset_folder, dataset):
+    if not os.path.exists(new_dataset_folder):
+        os.makedirs(new_dataset_folder)
+        os.makedirs(os.path.join(new_dataset_folder, 'images'))
+        os.makedirs(os.path.join(new_dataset_folder, 'labels'))
+
+    for element in dataset.elements + dataset.augmented_elements:
+        image_path = element.image_path
+        label_path = element.label_path
+
+        image_filename = os.path.basename(image_path)
+        label_filename = os.path.basename(label_path)
+
+        new_image_path = os.path.join(new_dataset_folder, 'images', image_filename)
+        shutil.copyfile(image_path, new_image_path)
+
+        new_label_path = os.path.join(new_dataset_folder, 'labels', label_filename)
+        shutil.copyfile(label_path, new_label_path)
+    return new_dataset_folder
+
+def create_data_yaml(train_path, valid_path):
+    data_yaml = f"""\
+train: {train_path}
+val: {valid_path}
+nc: 4
+names: ['Other','Larch-H', 'Larch-LD', 'Larch-HD']
+"""
+    with open('data.yaml', 'w') as f:
+        f.write(data_yaml)
+
+def load_training_config(config_file):
+    with open(config_file, 'r') as file:
+        config = yaml.safe_load(file)
+    return config

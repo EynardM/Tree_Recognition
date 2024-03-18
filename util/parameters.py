@@ -1,0 +1,3 @@
+EPOCHS = 200 
+BATCH_SIZE = 16
+LR = 0.01

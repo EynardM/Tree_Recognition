@@ -1,8 +1,6 @@
 from util.helpers import *
 from util.objects import *
 from util.decorators import *
-from tqdm import trange
-from statistics import stdev
 
 def get_augmented_dataset(train_dataset: Dataset):
     train_dataset.get_stats()
@@ -29,16 +27,24 @@ def get_augmented_dataset(train_dataset: Dataset):
 def main():
     train_dataset, test_dataset, valid_dataset = get_datasets()
     augmented_dataset = get_augmented_dataset(train_dataset=train_dataset)
-    dict_datasets = {
+
+    datasets = {
         'train': train_dataset,
         'augmented': augmented_dataset,
         'test': test_dataset,
         'valid': valid_dataset
     }
-    
-    save_datasets(dict_datasets)
-    
-    loaded_datasets = load_datasets()
-    print(loaded_datasets)
+
+    for name, dataset in datasets.items():
+        if name == 'train':
+            new_dataset_folder = RUN_TRAIN_DATASET
+        elif name == 'augmented':
+            new_dataset_folder = RUN_AUGMENTED_DATASET
+        elif name == 'test':
+            new_dataset_folder = RUN_TEST_DATASET
+        else:
+            new_dataset_folder = RUN_VALID_DATASET
+        generate_dataset(new_dataset_folder, dataset)
+        
 if __name__ == "__main__":
     main()

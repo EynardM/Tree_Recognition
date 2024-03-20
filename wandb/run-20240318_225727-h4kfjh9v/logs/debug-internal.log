@@ -1,0 +1,182 @@
+2024-03-18 22:57:27,559 INFO    StreamThr :4301 [internal.py:wandb_internal():86] W&B internal server running at pid: 4301, started at: 2024-03-18 22:57:27.558549
+2024-03-18 22:57:27,561 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: status
+2024-03-18 22:57:27,562 INFO    WriterThread:4301 [datastore.py:open_for_write():87] open: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/run-h4kfjh9v.wandb
+2024-03-18 22:57:27,563 DEBUG   SenderThread:4301 [sender.py:send():378] send: header
+2024-03-18 22:57:27,563 DEBUG   SenderThread:4301 [sender.py:send():378] send: run
+2024-03-18 22:57:28,327 INFO    SenderThread:4301 [dir_watcher.py:__init__():211] watching files in: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files
+2024-03-18 22:57:28,327 INFO    SenderThread:4301 [sender.py:_start_run_threads():1099] run started: h4kfjh9v with start time 1710802647.142512
+2024-03-18 22:57:28,339 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: check_version
+2024-03-18 22:57:28,340 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: check_version
+2024-03-18 22:57:28,421 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: run_start
+2024-03-18 22:57:28,422 DEBUG   HandlerThread:4301 [system_info.py:__init__():26] System info init
+2024-03-18 22:57:28,422 DEBUG   HandlerThread:4301 [system_info.py:__init__():41] System info init done
+2024-03-18 22:57:28,422 INFO    HandlerThread:4301 [system_monitor.py:start():194] Starting system monitor
+2024-03-18 22:57:28,422 INFO    SystemMonitor:4301 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-18 22:57:28,422 INFO    HandlerThread:4301 [system_monitor.py:probe():214] Collecting system info
+2024-03-18 22:57:28,423 INFO    SystemMonitor:4301 [interfaces.py:start():190] Started cpu monitoring
+2024-03-18 22:57:28,423 INFO    SystemMonitor:4301 [interfaces.py:start():190] Started disk monitoring
+2024-03-18 22:57:28,424 INFO    SystemMonitor:4301 [interfaces.py:start():190] Started gpu monitoring
+2024-03-18 22:57:28,424 INFO    SystemMonitor:4301 [interfaces.py:start():190] Started memory monitoring
+2024-03-18 22:57:28,425 INFO    SystemMonitor:4301 [interfaces.py:start():190] Started network monitoring
+2024-03-18 22:57:28,432 DEBUG   HandlerThread:4301 [system_info.py:probe():150] Probing system
+2024-03-18 22:57:28,433 DEBUG   HandlerThread:4301 [system_info.py:_probe_git():135] Probing git
+2024-03-18 22:57:28,450 DEBUG   HandlerThread:4301 [system_info.py:_probe_git():143] Probing git done
+2024-03-18 22:57:28,451 DEBUG   HandlerThread:4301 [system_info.py:probe():198] Probing system done
+2024-03-18 22:57:28,451 DEBUG   HandlerThread:4301 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-1053-gcp-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-03-18T22:57:28.432903', 'startedAt': '2024-03-18T22:57:27.136132', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/EynardM/Tree_Recognition.git', 'commit': 'c76e97b350a680d55b4158af35233bc6335ae034'}, 'email': None, 'root': '/home/eynardmaxime1/Tree_Recognition', 'host': 'instance-20240318-171734', 'username': 'eynardmaxime1', 'executable': '/usr/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2199.998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 96.73210144042969, 'used': 26.249977111816406}}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 15843721216}], 'memory': {'total': 29.368385314941406}}
+2024-03-18 22:57:28,451 INFO    HandlerThread:4301 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-18 22:57:28,451 INFO    HandlerThread:4301 [system_monitor.py:probe():227] Publishing system info
+2024-03-18 22:57:28,452 INFO    HandlerThread:4301 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-18 22:57:28,453 DEBUG   SenderThread:4301 [sender.py:send():378] send: files
+2024-03-18 22:57:28,453 INFO    SenderThread:4301 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-18 22:57:28,564 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-18 22:57:28,564 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: python_packages
+2024-03-18 22:57:28,605 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 22:57:28,605 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 22:57:28,606 DEBUG   SenderThread:4301 [sender.py:send():378] send: telemetry
+2024-03-18 22:57:28,606 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: stop_status
+2024-03-18 22:57:29,024 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-18 22:57:29,024 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: log_artifact
+2024-03-18 22:57:29,091 INFO    wandb-upload_0:4301 [upload_job.py:push():131] Uploaded file /tmp/tmpczs_n7icwandb/nkz250nr-wandb-metadata.json
+2024-03-18 22:57:29,332 INFO    Thread-120:4301 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/requirements.txt
+2024-03-18 22:57:29,333 INFO    Thread-120:4301 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/wandb-metadata.json
+2024-03-18 22:57:30,027 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 22:57:34,159 INFO    wandb-upload_0:4301 [upload_job.py:push():89] Uploaded file /home/eynardmaxime1/.local/share/wandb/artifacts/staging/tmpb1rwybpw
+2024-03-18 22:57:34,981 INFO    SenderThread:4301 [sender.py:send_request_log_artifact():1431] logged artifact yolov8_s_200_16_0.01.pt - {'id': 'QXJ0aWZhY3Q6NzYxOTU4NDIx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE1MDEzNjg2NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzYxOTAwMzQ4', 'versionIndex': 0}}}
+2024-03-18 22:57:34,981 DEBUG   SenderThread:4301 [sender.py:send():378] send: telemetry
+2024-03-18 22:57:34,981 DEBUG   SenderThread:4301 [sender.py:send():378] send: exit
+2024-03-18 22:57:34,981 INFO    SenderThread:4301 [sender.py:send_exit():585] handling exit code: 0
+2024-03-18 22:57:34,981 INFO    SenderThread:4301 [sender.py:send_exit():587] handling runtime: 0
+2024-03-18 22:57:34,981 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 22:57:34,984 INFO    SenderThread:4301 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-18 22:57:34,984 INFO    SenderThread:4301 [sender.py:send_exit():593] send defer
+2024-03-18 22:57:34,984 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 22:57:34,984 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:34,984 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-18 22:57:34,985 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:34,985 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-03-18 22:57:34,985 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 1
+2024-03-18 22:57:34,985 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:34,985 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-18 22:57:34,985 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:34,986 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-03-18 22:57:34,986 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 2
+2024-03-18 22:57:34,986 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:34,986 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-18 22:57:34,986 INFO    HandlerThread:4301 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-18 22:57:34,986 DEBUG   SystemMonitor:4301 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-18 22:57:34,986 DEBUG   SystemMonitor:4301 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-18 22:57:34,986 DEBUG   SystemMonitor:4301 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-18 22:57:34,987 INFO    HandlerThread:4301 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-18 22:57:34,987 INFO    HandlerThread:4301 [interfaces.py:finish():202] Joined disk monitor
+2024-03-18 22:57:35,041 INFO    HandlerThread:4301 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-18 22:57:35,041 INFO    HandlerThread:4301 [interfaces.py:finish():202] Joined memory monitor
+2024-03-18 22:57:35,041 INFO    HandlerThread:4301 [interfaces.py:finish():202] Joined network monitor
+2024-03-18 22:57:35,042 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-18 22:57:35,042 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 22:57:35,042 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:35,042 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-03-18 22:57:35,042 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 3
+2024-03-18 22:57:35,042 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 22:57:35,042 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:35,043 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-18 22:57:35,043 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:35,043 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-03-18 22:57:35,043 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 4
+2024-03-18 22:57:35,043 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:35,043 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-18 22:57:35,043 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:35,043 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-03-18 22:57:35,043 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 5
+2024-03-18 22:57:35,044 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:35,044 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-18 22:57:35,044 DEBUG   SenderThread:4301 [sender.py:send():378] send: summary
+2024-03-18 22:57:35,044 INFO    SenderThread:4301 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-18 22:57:35,044 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:35,044 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-03-18 22:57:35,044 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 6
+2024-03-18 22:57:35,045 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:35,045 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-18 22:57:35,045 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:35,045 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-03-18 22:57:35,049 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 22:57:35,217 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 7
+2024-03-18 22:57:35,218 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:35,218 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-18 22:57:35,218 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:35,218 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-03-18 22:57:35,218 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 8
+2024-03-18 22:57:35,218 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:35,219 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-18 22:57:35,219 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:35,219 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-03-18 22:57:35,219 INFO    SenderThread:4301 [job_builder.py:build():298] Attempting to build job artifact
+2024-03-18 22:57:35,219 INFO    SenderThread:4301 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-03-18 22:57:35,222 INFO    SenderThread:4301 [job_builder.py:build():404] adding wandb-job metadata file
+2024-03-18 22:57:35,226 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 9
+2024-03-18 22:57:35,226 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:35,226 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-18 22:57:35,227 DEBUG   SenderThread:4301 [sender.py:send():378] send: artifact
+2024-03-18 22:57:35,333 INFO    Thread-120:4301 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/config.yaml
+2024-03-18 22:57:35,333 INFO    Thread-120:4301 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/wandb-summary.json
+2024-03-18 22:57:35,796 INFO    SenderThread:4301 [sender.py:send_artifact():1443] sent artifact job-https___github.com_EynardM_Tree_Recognition.git_train.py - {'id': 'QXJ0aWZhY3Q6NzYxNzE1MTI3', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE1MDEwMTUxOA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzYxNzE1MTI3', 'versionIndex': 0}}}
+2024-03-18 22:57:35,796 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:35,796 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-03-18 22:57:35,796 INFO    SenderThread:4301 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-18 22:57:36,029 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 22:57:36,334 INFO    SenderThread:4301 [dir_watcher.py:finish():388] scan: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files
+2024-03-18 22:57:36,334 INFO    SenderThread:4301 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/wandb-metadata.json wandb-metadata.json
+2024-03-18 22:57:36,334 INFO    SenderThread:4301 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/wandb-summary.json wandb-summary.json
+2024-03-18 22:57:36,335 INFO    SenderThread:4301 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/config.yaml config.yaml
+2024-03-18 22:57:36,335 INFO    SenderThread:4301 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/requirements.txt requirements.txt
+2024-03-18 22:57:36,339 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 10
+2024-03-18 22:57:36,340 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 22:57:36,340 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:36,340 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-18 22:57:36,343 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:36,343 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-03-18 22:57:36,343 INFO    SenderThread:4301 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-18 22:57:36,755 INFO    wandb-upload_1:4301 [upload_job.py:push():131] Uploaded file /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/config.yaml
+2024-03-18 22:57:36,802 INFO    wandb-upload_0:4301 [upload_job.py:push():131] Uploaded file /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/wandb-summary.json
+2024-03-18 22:57:36,956 INFO    wandb-upload_2:4301 [upload_job.py:push():131] Uploaded file /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/files/requirements.txt
+2024-03-18 22:57:37,029 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 22:57:37,029 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 22:57:37,156 INFO    Thread-119:4301 [sender.py:transition_state():613] send defer: 11
+2024-03-18 22:57:37,157 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:37,157 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-18 22:57:37,157 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:37,157 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-03-18 22:57:37,157 INFO    SenderThread:4301 [file_pusher.py:join():178] waiting for file pusher
+2024-03-18 22:57:37,158 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 12
+2024-03-18 22:57:37,158 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:37,158 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-18 22:57:37,158 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:37,158 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-03-18 22:57:37,158 INFO    SenderThread:4301 [file_stream.py:finish():595] file stream finish called
+2024-03-18 22:57:37,622 INFO    SenderThread:4301 [file_stream.py:finish():599] file stream finish is done
+2024-03-18 22:57:37,622 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 13
+2024-03-18 22:57:37,622 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:37,623 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-18 22:57:37,623 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:37,623 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-03-18 22:57:37,623 INFO    SenderThread:4301 [sender.py:transition_state():613] send defer: 14
+2024-03-18 22:57:37,623 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 22:57:37,623 INFO    HandlerThread:4301 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-18 22:57:37,624 DEBUG   SenderThread:4301 [sender.py:send():378] send: final
+2024-03-18 22:57:37,624 DEBUG   SenderThread:4301 [sender.py:send():378] send: footer
+2024-03-18 22:57:37,624 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: defer
+2024-03-18 22:57:37,624 INFO    SenderThread:4301 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-03-18 22:57:37,625 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 22:57:37,625 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 22:57:37,626 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 22:57:37,626 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: server_info
+2024-03-18 22:57:37,627 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: server_info
+2024-03-18 22:57:37,669 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-18 22:57:37,669 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-18 22:57:37,669 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: job_info
+2024-03-18 22:57:37,787 DEBUG   SenderThread:4301 [sender.py:send_request():405] send_request: job_info
+2024-03-18 22:57:37,788 DEBUG   HandlerThread:4301 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-18 22:57:37,788 INFO    HandlerThread:4301 [handler.py:finish():869] shutting down handler
+2024-03-18 22:57:38,670 INFO    WriterThread:4301 [datastore.py:close():296] close: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_225727-h4kfjh9v/run-h4kfjh9v.wandb
+2024-03-18 22:57:38,788 INFO    SenderThread:4301 [sender.py:finish():1521] shutting down sender
+2024-03-18 22:57:38,788 INFO    SenderThread:4301 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-18 22:57:38,788 INFO    SenderThread:4301 [file_pusher.py:join():178] waiting for file pusher

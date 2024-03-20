@@ -1,0 +1,88 @@
+{
+    "os": "Linux-5.15.0-1053-gcp-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2024-03-18T19:40:50.318803",
+    "startedAt": "2024-03-18T19:40:49.113364",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/EynardM/Tree_Recognition.git",
+        "commit": "c76e97b350a680d55b4158af35233bc6335ae034"
+    },
+    "email": null,
+    "root": "/home/eynardmaxime1/Tree_Recognition",
+    "host": "instance-20240318-171734",
+    "username": "eynardmaxime1",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2199.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 96.73210144042969,
+            "used": 22.198101043701172
+        }
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 15843721216
+        }
+    ],
+    "memory": {
+        "total": 29.368385314941406
+    }
+}

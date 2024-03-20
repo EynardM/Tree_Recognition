@@ -13,4 +13,4 @@ RUN_TEST_DATASET = "Datasets/test"
 RUN_VALID_DATASET = "Datasets/valid"
 
 MODELS_TRAIN = "Models/train"
-MODELS_AUGMENTED = "Models/train"
+MODELS_AUGMENTED = "Models/augmented"

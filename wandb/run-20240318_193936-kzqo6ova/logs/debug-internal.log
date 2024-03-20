@@ -1,0 +1,426 @@
+2024-03-18 19:39:36,902 INFO    StreamThr :3257 [internal.py:wandb_internal():86] W&B internal server running at pid: 3257, started at: 2024-03-18 19:39:36.901915
+2024-03-18 19:39:36,904 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status
+2024-03-18 19:39:36,909 INFO    WriterThread:3257 [datastore.py:open_for_write():87] open: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/run-kzqo6ova.wandb
+2024-03-18 19:39:36,910 DEBUG   SenderThread:3257 [sender.py:send():378] send: header
+2024-03-18 19:39:36,931 DEBUG   SenderThread:3257 [sender.py:send():378] send: run
+2024-03-18 19:39:37,362 INFO    SenderThread:3257 [dir_watcher.py:__init__():211] watching files in: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files
+2024-03-18 19:39:37,362 INFO    SenderThread:3257 [sender.py:_start_run_threads():1099] run started: kzqo6ova with start time 1710790776.90184
+2024-03-18 19:39:37,374 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: check_version
+2024-03-18 19:39:37,374 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: check_version
+2024-03-18 19:39:37,453 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: run_start
+2024-03-18 19:39:37,457 DEBUG   HandlerThread:3257 [system_info.py:__init__():26] System info init
+2024-03-18 19:39:37,457 DEBUG   HandlerThread:3257 [system_info.py:__init__():41] System info init done
+2024-03-18 19:39:37,457 INFO    HandlerThread:3257 [system_monitor.py:start():194] Starting system monitor
+2024-03-18 19:39:37,457 INFO    SystemMonitor:3257 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-18 19:39:37,458 INFO    HandlerThread:3257 [system_monitor.py:probe():214] Collecting system info
+2024-03-18 19:39:37,458 INFO    SystemMonitor:3257 [interfaces.py:start():190] Started cpu monitoring
+2024-03-18 19:39:37,459 INFO    SystemMonitor:3257 [interfaces.py:start():190] Started disk monitoring
+2024-03-18 19:39:37,459 INFO    SystemMonitor:3257 [interfaces.py:start():190] Started gpu monitoring
+2024-03-18 19:39:37,460 INFO    SystemMonitor:3257 [interfaces.py:start():190] Started memory monitoring
+2024-03-18 19:39:37,461 INFO    SystemMonitor:3257 [interfaces.py:start():190] Started network monitoring
+2024-03-18 19:39:37,467 DEBUG   HandlerThread:3257 [system_info.py:probe():150] Probing system
+2024-03-18 19:39:37,472 DEBUG   HandlerThread:3257 [system_info.py:_probe_git():135] Probing git
+2024-03-18 19:39:37,484 DEBUG   HandlerThread:3257 [system_info.py:_probe_git():143] Probing git done
+2024-03-18 19:39:37,485 DEBUG   HandlerThread:3257 [system_info.py:probe():198] Probing system done
+2024-03-18 19:39:37,485 DEBUG   HandlerThread:3257 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-1053-gcp-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-03-18T19:39:37.467170', 'startedAt': '2024-03-18T19:39:36.894662', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/EynardM/Tree_Recognition.git', 'commit': 'c76e97b350a680d55b4158af35233bc6335ae034'}, 'email': None, 'root': '/home/eynardmaxime1/Tree_Recognition', 'host': 'instance-20240318-171734', 'username': 'eynardmaxime1', 'executable': '/usr/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2199.998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 96.73210144042969, 'used': 22.15837860107422}}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 15843721216}], 'memory': {'total': 29.368385314941406}}
+2024-03-18 19:39:37,485 INFO    HandlerThread:3257 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-18 19:39:37,485 INFO    HandlerThread:3257 [system_monitor.py:probe():227] Publishing system info
+2024-03-18 19:39:37,486 INFO    HandlerThread:3257 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-18 19:39:37,488 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:39:37,488 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-18 19:39:37,591 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-18 19:39:37,591 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: python_packages
+2024-03-18 19:39:37,633 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 19:39:37,633 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 19:39:37,634 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: stop_status
+2024-03-18 19:39:37,877 DEBUG   SenderThread:3257 [sender.py:send():378] send: telemetry
+2024-03-18 19:39:38,118 INFO    wandb-upload_0:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/vadncoc6-wandb-metadata.json
+2024-03-18 19:39:38,364 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:39:38,364 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/requirements.txt
+2024-03-18 19:39:38,365 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/wandb-metadata.json
+2024-03-18 19:39:40,364 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:39:41,998 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:39:44,365 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:39:47,683 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:39:48,367 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:39:50,367 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:39:52,368 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:39:52,743 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 19:39:52,744 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 19:39:52,744 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: stop_status
+2024-03-18 19:39:52,950 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:39:54,369 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:39:56,370 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:39:57,987 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:39:58,370 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:00,371 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:02,372 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:02,695 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:02,695 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:02,991 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:40:03,940 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:04,292 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:04,292 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/labels_1_1f0825e1540797e256c6.jpg with policy now
+2024-03-18 19:40:04,293 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:04,326 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:04,328 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:04,329 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/train_batch0_1_b45076128af4d626fca5.jpg with policy now
+2024-03-18 19:40:04,359 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:04,359 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:04,359 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/train_batch1_1_c3c44bbd7c3a520b65bc.jpg with policy now
+2024-03-18 19:40:04,373 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:04,373 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/train_batch1_1_c3c44bbd7c3a520b65bc.jpg
+2024-03-18 19:40:04,373 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/train_batch0_1_b45076128af4d626fca5.jpg
+2024-03-18 19:40:04,373 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/labels_1_1f0825e1540797e256c6.jpg
+2024-03-18 19:40:04,374 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media
+2024-03-18 19:40:04,374 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images
+2024-03-18 19:40:04,393 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:04,393 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:04,393 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/train_batch2_1_107f85f3ff0c9d8bc3ab.jpg with policy now
+2024-03-18 19:40:04,459 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:05,373 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/train_batch2_1_107f85f3ff0c9d8bc3ab.jpg
+2024-03-18 19:40:05,374 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images
+2024-03-18 19:40:05,378 INFO    wandb-upload_0:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/z5qsyikk-media/images/labels_1_1f0825e1540797e256c6.jpg
+2024-03-18 19:40:05,828 INFO    wandb-upload_2:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/01ux8hng-media/images/train_batch1_1_c3c44bbd7c3a520b65bc.jpg
+2024-03-18 19:40:05,861 INFO    wandb-upload_3:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/dhd5l0t9-media/images/train_batch2_1_107f85f3ff0c9d8bc3ab.jpg
+2024-03-18 19:40:06,374 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:06,624 INFO    wandb-upload_1:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/ur7nbz4w-media/images/train_batch0_1_b45076128af4d626fca5.jpg
+2024-03-18 19:40:07,070 INFO    wandb-upload_0:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/jt95khfp-media/images/labels_1_1f0825e1540797e256c6.jpg
+2024-03-18 19:40:07,598 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 19:40:07,599 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 19:40:07,600 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: stop_status
+2024-03-18 19:40:08,101 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:40:08,156 INFO    wandb-upload_3:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/gt28v0wb-media/images/train_batch2_1_107f85f3ff0c9d8bc3ab.jpg
+2024-03-18 19:40:08,375 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:08,375 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/config.yaml
+2024-03-18 19:40:09,901 INFO    wandb-upload_1:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/6xoebaz8-media/images/train_batch1_1_c3c44bbd7c3a520b65bc.jpg
+2024-03-18 19:40:10,075 INFO    wandb-upload_0:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/3e0dy85e-media/images/train_batch0_1_b45076128af4d626fca5.jpg
+2024-03-18 19:40:10,376 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:12,377 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:13,077 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:13,079 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:13,079 DEBUG   SenderThread:3257 [sender.py:send():378] send: history
+2024-03-18 19:40:13,080 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: summary_record
+2024-03-18 19:40:13,080 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-18 19:40:13,377 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/wandb-summary.json
+2024-03-18 19:40:13,406 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:40:14,378 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:14,432 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:16,379 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:19,332 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:40:22,382 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:22,601 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 19:40:22,601 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: stop_status
+2024-03-18 19:40:22,611 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 19:40:24,383 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:25,243 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:40:27,906 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:27,940 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:27,940 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:27,940 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/val_batch0_pred_2_89aa65d2abb873457ac2.jpg with policy now
+2024-03-18 19:40:27,973 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:27,973 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:27,973 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/val_batch0_labels_2_8c17ce80b428f6407488.jpg with policy now
+2024-03-18 19:40:28,006 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,007 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,007 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/val_batch1_pred_2_7ea2bf79b6fba82ff567.jpg with policy now
+2024-03-18 19:40:28,040 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,040 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,040 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/val_batch1_labels_2_133dbabc7d1111635ced.jpg with policy now
+2024-03-18 19:40:28,200 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,200 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,201 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/val_batch2_pred_2_87ae381c56fb8bb49511.jpg with policy now
+2024-03-18 19:40:28,241 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,241 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,241 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/val_batch2_labels_2_cd2a0219ce8f6492e42b.jpg with policy now
+2024-03-18 19:40:28,297 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,298 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,298 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/PR_curve_2_00ac7e183a494e5e4a3a.png with policy now
+2024-03-18 19:40:28,351 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,351 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,351 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/F1_curve_2_38972376222eab53ff56.png with policy now
+2024-03-18 19:40:28,385 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:28,385 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch0_labels_2_8c17ce80b428f6407488.jpg
+2024-03-18 19:40:28,385 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch0_pred_2_89aa65d2abb873457ac2.jpg
+2024-03-18 19:40:28,386 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch1_labels_2_133dbabc7d1111635ced.jpg
+2024-03-18 19:40:28,386 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/F1_curve_2_38972376222eab53ff56.png
+2024-03-18 19:40:28,386 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/PR_curve_2_00ac7e183a494e5e4a3a.png
+2024-03-18 19:40:28,386 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch2_labels_2_cd2a0219ce8f6492e42b.jpg
+2024-03-18 19:40:28,387 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch2_pred_2_87ae381c56fb8bb49511.jpg
+2024-03-18 19:40:28,387 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch1_pred_2_7ea2bf79b6fba82ff567.jpg
+2024-03-18 19:40:28,387 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images
+2024-03-18 19:40:28,414 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,414 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,415 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/P_curve_2_4b69c61a0df42d2e5a2d.png with policy now
+2024-03-18 19:40:28,465 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,465 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,465 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/R_curve_2_e0ac54a77eb07d256b0f.png with policy now
+2024-03-18 19:40:28,573 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,573 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,573 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/confusion_matrix_normalized_2_f09b37895be97ebcb6d0.png with policy now
+2024-03-18 19:40:28,676 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:28,676 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:28,676 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/confusion_matrix_2_3e6aa26656ba7bc23867.png with policy now
+2024-03-18 19:40:29,208 INFO    wandb-upload_8:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/1dghjmj4-media/images/P_curve_2_4b69c61a0df42d2e5a2d.png
+2024-03-18 19:40:29,282 INFO    wandb-upload_1:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/uelz0dap-media/images/val_batch0_labels_2_8c17ce80b428f6407488.jpg
+2024-03-18 19:40:29,318 INFO    wandb-upload_6:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/m7b9y4ux-media/images/PR_curve_2_00ac7e183a494e5e4a3a.png
+2024-03-18 19:40:29,334 INFO    wandb-upload_9:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/gym4sena-media/images/R_curve_2_e0ac54a77eb07d256b0f.png
+2024-03-18 19:40:29,386 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/confusion_matrix_2_3e6aa26656ba7bc23867.png
+2024-03-18 19:40:29,386 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/P_curve_2_4b69c61a0df42d2e5a2d.png
+2024-03-18 19:40:29,386 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/R_curve_2_e0ac54a77eb07d256b0f.png
+2024-03-18 19:40:29,386 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/confusion_matrix_normalized_2_f09b37895be97ebcb6d0.png
+2024-03-18 19:40:29,387 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images
+2024-03-18 19:40:29,544 INFO    wandb-upload_2:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/sl5vpth1-media/images/val_batch1_pred_2_7ea2bf79b6fba82ff567.jpg
+2024-03-18 19:40:29,817 INFO    wandb-upload_4:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/vls96vj6-media/images/val_batch2_pred_2_87ae381c56fb8bb49511.jpg
+2024-03-18 19:40:29,917 INFO    wandb-upload_11:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/dl5qaqa3-media/images/confusion_matrix_2_3e6aa26656ba7bc23867.png
+2024-03-18 19:40:29,928 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:29,929 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:29,929 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/images/results_2_f2f011c6ddc0f82bbd14.png with policy now
+2024-03-18 19:40:30,264 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-18 19:40:30,265 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: log_artifact
+2024-03-18 19:40:30,331 INFO    wandb-upload_7:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/rbrnspab-media/images/F1_curve_2_38972376222eab53ff56.png
+2024-03-18 19:40:30,386 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:30,387 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/results_2_f2f011c6ddc0f82bbd14.png
+2024-03-18 19:40:30,387 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images
+2024-03-18 19:40:30,409 INFO    wandb-upload_8:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/64nyi9vi-media/images/P_curve_2_4b69c61a0df42d2e5a2d.png
+2024-03-18 19:40:30,423 INFO    wandb-upload_3:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/35ovd4ju-media/images/val_batch0_pred_2_89aa65d2abb873457ac2.jpg
+2024-03-18 19:40:30,484 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-18 19:40:30,498 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:30,515 INFO    wandb-upload_10:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/gol9tyq0-media/images/confusion_matrix_normalized_2_f09b37895be97ebcb6d0.png
+2024-03-18 19:40:30,526 INFO    wandb-upload_1:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/4xsldxs5-media/images/PR_curve_2_00ac7e183a494e5e4a3a.png
+2024-03-18 19:40:30,571 INFO    wandb-upload_5:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/qpzz04x2-media/images/val_batch2_labels_2_cd2a0219ce8f6492e42b.jpg
+2024-03-18 19:40:30,710 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-18 19:40:30,723 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:30,833 INFO    wandb-upload_6:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/pewpf6z3-media/images/R_curve_2_e0ac54a77eb07d256b0f.png
+2024-03-18 19:40:30,943 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-18 19:40:30,956 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:31,029 INFO    wandb-upload_4:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/qeeb6u4d-media/images/results_2_f2f011c6ddc0f82bbd14.png
+2024-03-18 19:40:31,158 INFO    wandb-upload_0:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/9i9mu1mv-media/images/val_batch1_labels_2_133dbabc7d1111635ced.jpg
+2024-03-18 19:40:31,181 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-18 19:40:31,194 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 19:40:31,370 INFO    wandb-upload_10:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/dw7habcp-media/images/confusion_matrix_2_3e6aa26656ba7bc23867.png
+2024-03-18 19:40:31,387 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table/curves/F1-Confidence(B)_table_2_94df1082a0558dfc0fa5.table.json
+2024-03-18 19:40:31,387 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table/curves/Precision-Recall(B)_table_2_59b97e4c94da4ac259c8.table.json
+2024-03-18 19:40:31,388 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table/curves/Recall-Confidence(B)_table_2_426c5372f73fc2d33ffe.table.json
+2024-03-18 19:40:31,388 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table/curves/Precision-Confidence(B)_table_2_290cd0dc3854053c0b99.table.json
+2024-03-18 19:40:31,388 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media
+2024-03-18 19:40:31,388 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table/curves
+2024-03-18 19:40:31,388 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table
+2024-03-18 19:40:31,650 INFO    wandb-upload_3:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/f8jtncv9-media/images/F1_curve_2_38972376222eab53ff56.png
+2024-03-18 19:40:31,740 INFO    wandb-upload_7:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/85oox7wy-media/images/val_batch0_labels_2_8c17ce80b428f6407488.jpg
+2024-03-18 19:40:31,747 INFO    wandb-upload_11:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/cr75ay77-media/images/confusion_matrix_normalized_2_f09b37895be97ebcb6d0.png
+2024-03-18 19:40:31,824 INFO    wandb-upload_12:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/hdj2gxk8-media/table/curves/Recall-Confidence(B)_table_2_426c5372f73fc2d33ffe.table.json
+2024-03-18 19:40:31,830 INFO    wandb-upload_10:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/72zp4rl0-media/table/curves/F1-Confidence(B)_table_2_94df1082a0558dfc0fa5.table.json
+2024-03-18 19:40:31,869 INFO    wandb-upload_13:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/vfgke590-media/table/curves/Precision-Confidence(B)_table_2_290cd0dc3854053c0b99.table.json
+2024-03-18 19:40:31,898 INFO    wandb-upload_4:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/j1iewlvo-media/table/curves/Precision-Recall(B)_table_2_59b97e4c94da4ac259c8.table.json
+2024-03-18 19:40:31,923 INFO    wandb-upload_8:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/8m1et982-media/images/val_batch0_pred_2_89aa65d2abb873457ac2.jpg
+2024-03-18 19:40:31,951 INFO    wandb-upload_9:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/bfxo8yek-media/images/val_batch1_pred_2_7ea2bf79b6fba82ff567.jpg
+2024-03-18 19:40:31,959 INFO    wandb-upload_2:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/gwyk0q3a-media/images/val_batch2_pred_2_87ae381c56fb8bb49511.jpg
+2024-03-18 19:40:32,196 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 19:40:32,519 INFO    wandb-upload_6:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/b1ve8jk0-media/images/results_2_f2f011c6ddc0f82bbd14.png
+2024-03-18 19:40:32,571 INFO    wandb-upload_1:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/7l55djoc-media/images/val_batch2_labels_2_cd2a0219ce8f6492e42b.jpg
+2024-03-18 19:40:33,186 INFO    wandb-upload_0:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/eso036vv-media/images/val_batch1_labels_2_133dbabc7d1111635ced.jpg
+2024-03-18 19:40:33,643 INFO    wandb-upload_5:3257 [upload_job.py:push():89] Uploaded file /home/eynardmaxime1/.local/share/wandb/artifacts/staging/tmpht6weula
+2024-03-18 19:40:34,446 INFO    SenderThread:3257 [sender.py:send_request_log_artifact():1431] logged artifact run_kzqo6ova_model - {'id': 'QXJ0aWZhY3Q6NzYxNzE0NzUx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE1MDEwMTQ0Nw==', 'latestArtifact': None}}
+2024-03-18 19:40:34,446 DEBUG   SenderThread:3257 [sender.py:send():378] send: config
+2024-03-18 19:40:34,446 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: log_artifact
+2024-03-18 19:40:34,450 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:40:35,464 INFO    wandb-upload_3:3257 [upload_job.py:push():89] Uploaded file /home/eynardmaxime1/.local/share/wandb/artifacts/staging/tmpj02vfhte
+2024-03-18 19:40:36,288 INFO    SenderThread:3257 [sender.py:send_request_log_artifact():1431] logged artifact run-kzqo6ova-curvesPrecisionRecallB_table - {'id': 'QXJ0aWZhY3Q6NzYxNzE0ODA0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE1MDEwMTQ1Mg==', 'latestArtifact': None}}
+2024-03-18 19:40:36,289 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:36,290 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/table/curves/Precision-Recall(B)_table_2_59b97e4c94da4ac259c8.table.json with policy now
+2024-03-18 19:40:36,290 DEBUG   SenderThread:3257 [sender.py:send():378] send: config
+2024-03-18 19:40:36,291 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: log_artifact
+2024-03-18 19:40:36,882 INFO    wandb-upload_11:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/grl2xay8-media/table/curves/Precision-Recall(B)_table_2_59b97e4c94da4ac259c8.table.json
+2024-03-18 19:40:37,197 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-18 19:40:37,439 INFO    wandb-upload_10:3257 [upload_job.py:push():89] Uploaded file /home/eynardmaxime1/.local/share/wandb/artifacts/staging/tmpyajps8wk
+2024-03-18 19:40:37,461 DEBUG   SystemMonitor:3257 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-18 19:40:38,218 INFO    SenderThread:3257 [sender.py:send_request_log_artifact():1431] logged artifact run-kzqo6ova-curvesF1ConfidenceB_table - {'id': 'QXJ0aWZhY3Q6NzYxNzE0ODMx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE1MDEwMTQ1NQ==', 'latestArtifact': None}}
+2024-03-18 19:40:38,218 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:38,218 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/table/curves/F1-Confidence(B)_table_2_94df1082a0558dfc0fa5.table.json with policy now
+2024-03-18 19:40:38,218 DEBUG   SenderThread:3257 [sender.py:send():378] send: config
+2024-03-18 19:40:38,218 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: log_artifact
+2024-03-18 19:40:38,790 INFO    wandb-upload_4:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/nnpooh31-media/table/curves/F1-Confidence(B)_table_2_94df1082a0558dfc0fa5.table.json
+2024-03-18 19:40:39,240 INFO    wandb-upload_9:3257 [upload_job.py:push():89] Uploaded file /home/eynardmaxime1/.local/share/wandb/artifacts/staging/tmp6tvhaqst
+2024-03-18 19:40:40,011 INFO    SenderThread:3257 [sender.py:send_request_log_artifact():1431] logged artifact run-kzqo6ova-curvesPrecisionConfidenceB_table - {'id': 'QXJ0aWZhY3Q6NzYxNzE0ODUx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE1MDEwMTQ1OQ==', 'latestArtifact': None}}
+2024-03-18 19:40:40,015 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:40:40,210 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:40,210 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/table/curves/Precision-Confidence(B)_table_2_290cd0dc3854053c0b99.table.json with policy now
+2024-03-18 19:40:40,211 DEBUG   SenderThread:3257 [sender.py:send():378] send: config
+2024-03-18 19:40:40,211 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: log_artifact
+2024-03-18 19:40:40,395 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/config.yaml
+2024-03-18 19:40:40,724 INFO    wandb-upload_6:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/atcuhvwk-media/table/curves/Precision-Confidence(B)_table_2_290cd0dc3854053c0b99.table.json
+2024-03-18 19:40:41,322 INFO    wandb-upload_0:3257 [upload_job.py:push():89] Uploaded file /home/eynardmaxime1/.local/share/wandb/artifacts/staging/tmpbrj8v7ff
+2024-03-18 19:40:42,129 INFO    SenderThread:3257 [sender.py:send_request_log_artifact():1431] logged artifact run-kzqo6ova-curvesRecallConfidenceB_table - {'id': 'QXJ0aWZhY3Q6NzYxNzE0ODgw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE1MDEwMTQ2Mg==', 'latestArtifact': None}}
+2024-03-18 19:40:42,129 DEBUG   SenderThread:3257 [sender.py:send():378] send: files
+2024-03-18 19:40:42,129 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file media/table/curves/Recall-Confidence(B)_table_2_426c5372f73fc2d33ffe.table.json with policy now
+2024-03-18 19:40:42,130 DEBUG   SenderThread:3257 [sender.py:send():378] send: telemetry
+2024-03-18 19:40:42,130 DEBUG   SenderThread:3257 [sender.py:send():378] send: exit
+2024-03-18 19:40:42,130 INFO    SenderThread:3257 [sender.py:send_exit():585] handling exit code: 0
+2024-03-18 19:40:42,130 INFO    SenderThread:3257 [sender.py:send_exit():587] handling runtime: 53
+2024-03-18 19:40:42,132 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-18 19:40:42,132 INFO    SenderThread:3257 [sender.py:send_exit():593] send defer
+2024-03-18 19:40:42,133 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 19:40:42,133 DEBUG   SenderThread:3257 [sender.py:send():378] send: stats
+2024-03-18 19:40:42,134 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:42,134 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-18 19:40:42,134 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:42,134 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-03-18 19:40:42,134 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 1
+2024-03-18 19:40:42,134 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:42,135 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-18 19:40:42,135 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:42,135 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-03-18 19:40:42,135 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 2
+2024-03-18 19:40:42,135 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:42,135 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-18 19:40:42,136 INFO    HandlerThread:3257 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-18 19:40:42,136 DEBUG   SystemMonitor:3257 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-18 19:40:42,136 DEBUG   SystemMonitor:3257 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-18 19:40:42,139 INFO    HandlerThread:3257 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-18 19:40:42,140 INFO    HandlerThread:3257 [interfaces.py:finish():202] Joined disk monitor
+2024-03-18 19:40:42,186 INFO    HandlerThread:3257 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-18 19:40:42,186 INFO    HandlerThread:3257 [interfaces.py:finish():202] Joined memory monitor
+2024-03-18 19:40:42,186 INFO    HandlerThread:3257 [interfaces.py:finish():202] Joined network monitor
+2024-03-18 19:40:42,187 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:42,187 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-03-18 19:40:42,187 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 3
+2024-03-18 19:40:42,187 DEBUG   SenderThread:3257 [sender.py:send():378] send: stats
+2024-03-18 19:40:42,187 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:42,187 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-18 19:40:42,189 DEBUG   SenderThread:3257 [sender.py:send():378] send: history
+2024-03-18 19:40:42,189 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: summary_record
+2024-03-18 19:40:42,190 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-18 19:40:42,190 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:42,190 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-03-18 19:40:42,190 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 4
+2024-03-18 19:40:42,190 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:42,190 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-18 19:40:42,191 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:42,191 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-03-18 19:40:42,191 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 5
+2024-03-18 19:40:42,191 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:42,191 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-18 19:40:42,191 DEBUG   SenderThread:3257 [sender.py:send():378] send: summary
+2024-03-18 19:40:42,192 INFO    SenderThread:3257 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-18 19:40:42,192 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:42,192 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-03-18 19:40:42,192 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 6
+2024-03-18 19:40:42,192 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:42,193 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-18 19:40:42,193 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:42,193 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-03-18 19:40:42,196 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 19:40:42,198 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-18 19:40:42,198 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 19:40:42,387 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 7
+2024-03-18 19:40:42,388 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 19:40:42,388 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:42,388 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-18 19:40:42,388 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:42,389 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-03-18 19:40:42,396 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/config.yaml
+2024-03-18 19:40:42,396 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/wandb-summary.json
+2024-03-18 19:40:42,711 INFO    wandb-upload_7:3257 [upload_job.py:push():131] Uploaded file /tmp/tmp1ygamimjwandb/q2iueuxq-media/table/curves/Recall-Confidence(B)_table_2_426c5372f73fc2d33ffe.table.json
+2024-03-18 19:40:43,199 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 19:40:44,071 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 8
+2024-03-18 19:40:44,071 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 19:40:44,072 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:44,072 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-18 19:40:44,072 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:44,072 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-03-18 19:40:44,072 INFO    SenderThread:3257 [job_builder.py:build():298] Attempting to build job artifact
+2024-03-18 19:40:44,073 INFO    SenderThread:3257 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-03-18 19:40:44,076 INFO    SenderThread:3257 [job_builder.py:build():404] adding wandb-job metadata file
+2024-03-18 19:40:44,081 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 9
+2024-03-18 19:40:44,081 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:44,081 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-18 19:40:44,081 DEBUG   SenderThread:3257 [sender.py:send():378] send: artifact
+2024-03-18 19:40:44,200 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 19:40:44,397 INFO    Thread-12 :3257 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:44,896 INFO    wandb-upload_12:3257 [upload_job.py:push():86] Skipped uploading /home/eynardmaxime1/.local/share/wandb/artifacts/staging/tmprfi8p5b3
+2024-03-18 19:40:45,204 INFO    wandb-upload_13:3257 [upload_job.py:push():89] Uploaded file /home/eynardmaxime1/.local/share/wandb/artifacts/staging/tmpzvxjjybr
+2024-03-18 19:40:46,373 INFO    SenderThread:3257 [sender.py:send_artifact():1443] sent artifact job-https___github.com_EynardM_Tree_Recognition.git_train.py - {'id': 'QXJ0aWZhY3Q6NzYxNzE0OTMz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE1MDA2NzQxOA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzYxNzA5NDE2', 'versionIndex': 5}}}
+2024-03-18 19:40:46,373 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:46,373 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-03-18 19:40:46,373 INFO    SenderThread:3257 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-18 19:40:46,399 INFO    SenderThread:3257 [dir_watcher.py:finish():388] scan: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files
+2024-03-18 19:40:46,400 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log output.log
+2024-03-18 19:40:46,400 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/wandb-metadata.json wandb-metadata.json
+2024-03-18 19:40:46,400 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/wandb-summary.json wandb-summary.json
+2024-03-18 19:40:46,400 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/config.yaml config.yaml
+2024-03-18 19:40:46,400 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/requirements.txt requirements.txt
+2024-03-18 19:40:46,410 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch1_pred_2_7ea2bf79b6fba82ff567.jpg media/images/val_batch1_pred_2_7ea2bf79b6fba82ff567.jpg
+2024-03-18 19:40:46,410 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/F1_curve_2_38972376222eab53ff56.png media/images/F1_curve_2_38972376222eab53ff56.png
+2024-03-18 19:40:46,410 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/confusion_matrix_2_3e6aa26656ba7bc23867.png media/images/confusion_matrix_2_3e6aa26656ba7bc23867.png
+2024-03-18 19:40:46,410 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/PR_curve_2_00ac7e183a494e5e4a3a.png media/images/PR_curve_2_00ac7e183a494e5e4a3a.png
+2024-03-18 19:40:46,410 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/P_curve_2_4b69c61a0df42d2e5a2d.png media/images/P_curve_2_4b69c61a0df42d2e5a2d.png
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/train_batch2_1_107f85f3ff0c9d8bc3ab.jpg media/images/train_batch2_1_107f85f3ff0c9d8bc3ab.jpg
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch1_labels_2_133dbabc7d1111635ced.jpg media/images/val_batch1_labels_2_133dbabc7d1111635ced.jpg
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch0_labels_2_8c17ce80b428f6407488.jpg media/images/val_batch0_labels_2_8c17ce80b428f6407488.jpg
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/confusion_matrix_normalized_2_f09b37895be97ebcb6d0.png media/images/confusion_matrix_normalized_2_f09b37895be97ebcb6d0.png
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/train_batch0_1_b45076128af4d626fca5.jpg media/images/train_batch0_1_b45076128af4d626fca5.jpg
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/results_2_f2f011c6ddc0f82bbd14.png media/images/results_2_f2f011c6ddc0f82bbd14.png
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/train_batch1_1_c3c44bbd7c3a520b65bc.jpg media/images/train_batch1_1_c3c44bbd7c3a520b65bc.jpg
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch2_labels_2_cd2a0219ce8f6492e42b.jpg media/images/val_batch2_labels_2_cd2a0219ce8f6492e42b.jpg
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch0_pred_2_89aa65d2abb873457ac2.jpg media/images/val_batch0_pred_2_89aa65d2abb873457ac2.jpg
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/val_batch2_pred_2_87ae381c56fb8bb49511.jpg media/images/val_batch2_pred_2_87ae381c56fb8bb49511.jpg
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/labels_1_1f0825e1540797e256c6.jpg media/images/labels_1_1f0825e1540797e256c6.jpg
+2024-03-18 19:40:46,411 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/images/R_curve_2_e0ac54a77eb07d256b0f.png media/images/R_curve_2_e0ac54a77eb07d256b0f.png
+2024-03-18 19:40:46,412 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table/curves/Recall-Confidence(B)_table_2_426c5372f73fc2d33ffe.table.json media/table/curves/Recall-Confidence(B)_table_2_426c5372f73fc2d33ffe.table.json
+2024-03-18 19:40:46,412 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table/curves/Precision-Confidence(B)_table_2_290cd0dc3854053c0b99.table.json media/table/curves/Precision-Confidence(B)_table_2_290cd0dc3854053c0b99.table.json
+2024-03-18 19:40:46,412 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table/curves/Precision-Recall(B)_table_2_59b97e4c94da4ac259c8.table.json media/table/curves/Precision-Recall(B)_table_2_59b97e4c94da4ac259c8.table.json
+2024-03-18 19:40:46,412 INFO    SenderThread:3257 [dir_watcher.py:finish():402] scan save: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/media/table/curves/F1-Confidence(B)_table_2_94df1082a0558dfc0fa5.table.json media/table/curves/F1-Confidence(B)_table_2_94df1082a0558dfc0fa5.table.json
+2024-03-18 19:40:46,412 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 10
+2024-03-18 19:40:46,412 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 19:40:46,412 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:46,413 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-18 19:40:46,413 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:46,413 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-03-18 19:40:46,413 INFO    SenderThread:3257 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-18 19:40:46,855 INFO    wandb-upload_9:3257 [upload_job.py:push():131] Uploaded file /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/requirements.txt
+2024-03-18 19:40:46,856 INFO    wandb-upload_8:3257 [upload_job.py:push():131] Uploaded file /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/wandb-summary.json
+2024-03-18 19:40:46,875 INFO    wandb-upload_4:3257 [upload_job.py:push():131] Uploaded file /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/config.yaml
+2024-03-18 19:40:46,877 INFO    wandb-upload_10:3257 [upload_job.py:push():131] Uploaded file /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/files/output.log
+2024-03-18 19:40:47,077 INFO    Thread-11 :3257 [sender.py:transition_state():613] send defer: 11
+2024-03-18 19:40:47,078 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:47,078 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-18 19:40:47,079 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:47,079 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-03-18 19:40:47,079 INFO    SenderThread:3257 [file_pusher.py:join():178] waiting for file pusher
+2024-03-18 19:40:47,083 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 12
+2024-03-18 19:40:47,083 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:47,084 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-18 19:40:47,084 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:47,084 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-03-18 19:40:47,084 INFO    SenderThread:3257 [file_stream.py:finish():595] file stream finish called
+2024-03-18 19:40:47,201 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 19:40:47,617 INFO    SenderThread:3257 [file_stream.py:finish():599] file stream finish is done
+2024-03-18 19:40:47,617 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 13
+2024-03-18 19:40:47,617 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 19:40:47,617 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:47,618 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-18 19:40:47,618 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:47,618 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-03-18 19:40:47,618 INFO    SenderThread:3257 [sender.py:transition_state():613] send defer: 14
+2024-03-18 19:40:47,618 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 19:40:47,619 INFO    HandlerThread:3257 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-18 19:40:47,619 DEBUG   SenderThread:3257 [sender.py:send():378] send: final
+2024-03-18 19:40:47,619 DEBUG   SenderThread:3257 [sender.py:send():378] send: footer
+2024-03-18 19:40:47,619 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: defer
+2024-03-18 19:40:47,619 INFO    SenderThread:3257 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-03-18 19:40:47,620 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 19:40:47,620 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: poll_exit
+2024-03-18 19:40:47,621 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 19:40:47,621 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: server_info
+2024-03-18 19:40:47,622 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: server_info
+2024-03-18 19:40:47,665 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-18 19:40:47,665 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-18 19:40:47,666 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: job_info
+2024-03-18 19:40:47,775 DEBUG   SenderThread:3257 [sender.py:send_request():405] send_request: job_info
+2024-03-18 19:40:47,776 DEBUG   HandlerThread:3257 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-18 19:40:47,776 INFO    HandlerThread:3257 [handler.py:finish():869] shutting down handler
+2024-03-18 19:40:48,666 INFO    WriterThread:3257 [datastore.py:close():296] close: /home/eynardmaxime1/Tree_Recognition/wandb/run-20240318_193936-kzqo6ova/run-kzqo6ova.wandb
+2024-03-18 19:40:48,776 INFO    SenderThread:3257 [sender.py:finish():1521] shutting down sender
+2024-03-18 19:40:48,776 INFO    SenderThread:3257 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-18 19:40:48,776 INFO    SenderThread:3257 [file_pusher.py:join():178] waiting for file pusher

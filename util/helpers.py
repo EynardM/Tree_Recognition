@@ -69,7 +69,11 @@ def generate_dataset(new_dataset_folder, dataset):
         os.makedirs(os.path.join(new_dataset_folder, 'images'))
         os.makedirs(os.path.join(new_dataset_folder, 'labels'))
 
-    for element in dataset.elements + dataset.augmented_elements:
+    if new_dataset_folder == RUN_AUGMENTED_DATASET:
+        elements = dataset.augmented_elements
+    else: 
+        elements = dataset.elements
+    for element in elements:
         image_path = element.image_path
         label_path = element.label_path
 

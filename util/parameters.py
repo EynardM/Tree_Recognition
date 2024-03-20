@@ -1,3 +1,3 @@
-EPOCHS = 200 
+EPOCHS = 400 
 BATCH_SIZE = 16
-LR = 0.01
+

@@ -57,11 +57,10 @@ def create_dataset(dataset_path):
     return dataset
 
 def get_datasets():
-    train_dataset = create_dataset(TRAIN_DATASET_PATH)
-    test_dataset = create_dataset(TEST_DATASET_PATH)
-    valid_dataset = create_dataset(VALID_DATASET_PATH)
+    train_dataset = create_dataset(DATASET_TRAIN_PATH)
+    test_dataset = create_dataset(DATASET_TEST_PATH)
+    valid_dataset = create_dataset(DATASET_VALID_PATH)
     return train_dataset, test_dataset, valid_dataset
-
 
 def generate_dataset(new_dataset_folder, dataset):
     if not os.path.exists(new_dataset_folder):
@@ -69,10 +68,14 @@ def generate_dataset(new_dataset_folder, dataset):
         os.makedirs(os.path.join(new_dataset_folder, 'images'))
         os.makedirs(os.path.join(new_dataset_folder, 'labels'))
 
-    if new_dataset_folder == RUN_AUGMENTED_DATASET:
+    # Elements
+    if new_dataset_folder == DATASET_AUGMENTED_PATH:
         elements = dataset.augmented_elements
-    else: 
+
+    else:
         elements = dataset.elements
+
+    # Création du dataset
     for element in elements:
         image_path = element.image_path
         label_path = element.label_path

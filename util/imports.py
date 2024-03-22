@@ -19,3 +19,5 @@ import pickle
 from statistics import stdev
 from ultralytics import YOLO
 import yaml
+import wandb
+from codecarbon import EmissionsTracker

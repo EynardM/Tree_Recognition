@@ -1,16 +1,10 @@
-DATA_PATH = "Data"
-
-TRAIN_DATASET_PATH = "Data/train"
-TEST_DATASET_PATH = "Data/test"
-VALID_DATASET_PATH = "Data/valid"
-
-TRAIN_DATASET_IMAGES_PATH = "Data/train/images"
-TRAIN_DATASET_LABELS_PATH = "Data/train/labels"
-
-RUN_TRAIN_DATASET = "Datasets/train"
-RUN_AUGMENTED_DATASET = "Datasets/augmented"
-RUN_TEST_DATASET = "Datasets/test"
-RUN_VALID_DATASET = "Datasets/valid"
+DATASET_TRAIN_PATH = "Datasets/train"
+DATASET_TEST_PATH = "Datasets/test"
+DATASET_VALID_PATH = "Datasets/valid"
+DATASET_TMP_PATH = "Datasets/tmp"
+DATASET_AUGMENTED_PATH = "Datasets/augmented"
+DATASET_CONCATENATED_PATH = "Datasets/concatenated"
 
 MODELS_TRAIN = "Models/train"
 MODELS_AUGMENTED = "Models/augmented"
+MODELS_CONCATENATED = "Models/CONCATENATED"

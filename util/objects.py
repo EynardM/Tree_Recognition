@@ -62,16 +62,15 @@ class Dataset:
     def __init__(self, data_folder):
         self.data_folder = data_folder
         self.name = os.path.basename(data_folder)
-        self.dataset_stats = {'nb_trees': {}, 'proportions': {}}
+        
+        self.proportions = None
+        self.trees = None
 
         self.elements = []
         self.augmented_elements = []
 
     def __str__(self):
-        stats_str = "\nStatistics:\n"
-        for key, value in self.dataset_stats.items():
-            stats_str += f"{key}: {value}\n"
-        return f"Name: {self.name}\n{stats_str}"
+        return f"Name: {self.name}\n"
 
     def populate(self) -> None:
         for file in os.listdir(os.path.join(self.data_folder, 'images')):
@@ -96,17 +95,12 @@ class Dataset:
 
         proportions_total = {label: count / total_trees for label, count in nb_trees_total.items()}
 
-        self.dataset_stats['nb_trees'] = nb_trees_total
-        self.dataset_stats['proportions'] = proportions_total
+        self.proportions = proportions_total
+        self.trees = nb_trees_total
         
-    # def init(self, plot=False) -> None:
-    #     self.get_stats()
-    #     if plot:
-    #         self.plot_proportions()
-
     def plot_proportions(self):
-        labels = list(self.dataset_stats['proportions'].keys())
-        proportions = list(self.dataset_stats['proportions'].values())
+        labels = list(self.proportions.keys())
+        proportions = list(self.proportions.values())
         plt.figure(figsize=(10, 6))
         plt.bar(labels, proportions)
         plt.xlabel('Type d\'arbre')
@@ -117,7 +111,6 @@ class Dataset:
         plt.show()
 
     def data_augmentation(self, k=2):
-        # Sélection des images à augmenter
         selected_elements = []
         for element in self.elements:
             if (element.proportions['Larch-H'] >= element.proportions['Larch-LD'] * k) or \
@@ -128,43 +121,39 @@ class Dataset:
             image = cv2.imread(element.image_path)
             filtered_image = cv2.GaussianBlur(image, (5, 5), 0)
 
-            # Appliquer les rotations et autres filtres
             for angle in range(3):
                 rotated_image = cv2.rotate(image, angle)
                 filtered_rotated_image = cv2.GaussianBlur(rotated_image, (5, 5), 0)
 
-                # Rotation des annotations (boîtes englobantes)
                 rotated_annotations = []
                 for annotation in element.annotations:
                     tree_type, x, y, box_width, box_height = annotation
 
                     if angle == 2:
-                        rotated_x = y  # Swap x and y
-                        rotated_y = 1 - x  # Adjust y
+                        rotated_x = y  
+                        rotated_y = 1 - x  
                         rotated_box_width = box_height
                         rotated_box_height = box_width
 
                     elif angle == 1:
-                        rotated_x = 1 - x  # Swap x and y
-                        rotated_y = 1 - y   # Adjust y
+                        rotated_x = 1 - x  
+                        rotated_y = 1 - y   
                         rotated_box_width = box_width
                         rotated_box_height = box_height
 
                     elif angle ==  0:
-                        rotated_x = 1 - y  # Swap x and y
-                        rotated_y = x  # Adjust y
+                        rotated_x = 1 - y  
+                        rotated_y = x  
                         rotated_box_width = box_height
                         rotated_box_height = box_width
 
-                    # Ajouter les nouvelles coordonnées de la boîte englobante à la liste des annotations
                     rotated_annotations.append([tree_type, rotated_x, rotated_y, rotated_box_width, rotated_box_height])
 
-                # Image basique rotated
                 filename = f"{element.id}_{angle}"
-                augmented_image_path = os.path.join(TRAIN_DATASET_IMAGES_PATH, filename+".jpg")
+                augmented_image_path = os.path.join(DATASET_TMP_PATH+'/images', filename+".jpg")
                 cv2.imwrite(augmented_image_path, rotated_image)
 
-                augmented_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+".txt")
+                augmented_label_path = os.path.join(DATASET_TMP_PATH+'/labels', filename+".txt")
                 with open(augmented_label_path, 'w') as f:
                     for annotation in rotated_annotations:
                         f.write(' '.join(map(str, annotation)) + '\n')
@@ -172,11 +161,10 @@ class Dataset:
                 augmented_element = Data(augmented_image_path, augmented_label_path, filename)
                 self.augmented_elements.append(augmented_element)
 
-                # Image basique rotated filtered
-                filtered_image_path = os.path.join(TRAIN_DATASET_IMAGES_PATH, filename+"_f"+".jpg")
+                filtered_image_path = os.path.join(DATASET_TMP_PATH+'/images', filename+"_f"+".jpg")
                 cv2.imwrite(filtered_image_path, filtered_rotated_image)
 
-                filtered_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+"_f"+".txt")
+                filtered_label_path = os.path.join(DATASET_TMP_PATH+'/labels', filename+"_f"+".txt")
                 with open(filtered_label_path, 'w') as f:
                     for annotation in rotated_annotations:
                         f.write(' '.join(map(str, annotation)) + '\n')
@@ -184,17 +172,15 @@ class Dataset:
                 augmented_element = Data(filtered_image_path, filtered_label_path, filename+"_f")
                 self.augmented_elements.append(augmented_element)
 
-            # Image basique filtered
-            filtered_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+"_f"+".txt")
+            filtered_label_path = os.path.join(DATASET_TMP_PATH+'/labels', filename+"_f"+".txt")
             with open(filtered_label_path, 'w') as f:
                 for annotation in element.annotations:
                     f.write(' '.join(map(str, annotation)) + '\n')
 
-            # Image basique mirrored
             mirrored_image = cv2.flip(image, 1)
             mirrored_annotations = [[ann[0], 1 - ann[1], ann[2], ann[3], ann[4]] for ann in element.annotations]
-            mirrored_image_path = os.path.join(TRAIN_DATASET_IMAGES_PATH, filename+"_m"+".jpg")
-            mirrored_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+"_m"+".txt")          
+            mirrored_image_path = os.path.join(DATASET_TMP_PATH+'/images', filename+"_m"+".jpg")
+            mirrored_label_path = os.path.join(DATASET_TMP_PATH+'/labels', filename+"_m"+".txt")          
             cv2.imwrite(mirrored_image_path, mirrored_image)
 
             with open(mirrored_label_path, 'w') as f:
@@ -204,10 +190,9 @@ class Dataset:
             augmented_element = Data(mirrored_image_path, mirrored_label_path, filename+"_m")
             self.augmented_elements.append(augmented_element)
             
-            # Image basique mirrored filtered
             mirrored_filtered_image = cv2.flip(filtered_image, 1)  
-            mirrored_filtered_path = os.path.join(TRAIN_DATASET_IMAGES_PATH, filename+"_f_m"+".jpg")
-            mirrored_filtered_label_path = os.path.join(TRAIN_DATASET_LABELS_PATH, filename+"_f_m"+".txt")
+            mirrored_filtered_path = os.path.join(DATASET_TMP_PATH+'/images', filename+"_f_m"+".jpg")
+            mirrored_filtered_label_path = os.path.join(DATASET_TMP_PATH+'/labels', filename+"_f_m"+".txt")
             cv2.imwrite(mirrored_filtered_path, mirrored_filtered_image)
             
             with open(mirrored_filtered_label_path, 'w') as f:

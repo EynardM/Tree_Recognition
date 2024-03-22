@@ -176,7 +176,7 @@ def clean_and_preprocess_data(source, train_dir, test_dir, val_dir, split_ratio=
 
 if __name__ == "__main__":
     source_directory = "Larch_Dataset"
-    destination_directory = "Data"
+    destination_directory = "Datasets"
     train_directory = f"{destination_directory}/train"
     test_directory = f"{destination_directory}/test"
     val_directory = f"{destination_directory}/valid"
